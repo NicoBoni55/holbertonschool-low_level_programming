@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <time.h>
 /**
- *main - Positive and negative
+ *main - entry point
  *
  * Return: Always 0
  */
 int main(void)
-{ int x =
+{
+int x =
 srand(time(0))
 x = rand() - RAND_MAX / 2
 printf("%d \n", x);
