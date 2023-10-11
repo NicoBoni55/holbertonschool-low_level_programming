@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - entry point
+ *main - Positive and negative
  *
  * Return: Always 0
  */
