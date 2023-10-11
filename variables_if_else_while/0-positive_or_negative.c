@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 /**
  *main - Positive and negative
  *
@@ -6,7 +7,7 @@
  */
 int main(void)
 { int x =
-stand(time(0))
+srand(time(0))
 x = rand() - RAND_MAX / 2
 printf("%d \n", x);
 return (0);
