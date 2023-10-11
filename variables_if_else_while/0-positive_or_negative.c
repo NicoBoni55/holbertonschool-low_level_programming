@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int x; 
+	int n; 
 
 	srand(time(0));
-	x = rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	return (0);
 }
