@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- *main - print the size of various types on the computer
+ *main - entry point
  *
- * Description: using the main function
- * this program prints the size of various types on the computer
- * return: 0
+ * Return: Always 0
  */
 int main(void)
 {
