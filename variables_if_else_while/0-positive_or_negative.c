@@ -7,9 +7,10 @@
  */
 int main(void)
 {
-int x =
-srand(time(0))
-x = rand() - RAND_MAX / 2
-printf("%d \n", x);
-return (0);
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	return (0);
 }
