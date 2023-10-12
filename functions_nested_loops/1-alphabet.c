@@ -1,13 +1,16 @@
-#include <unistd.h>
-
+#include "main.h"
+/**
+ *print_alphabet - Print the alphabet from a-z
+ *
+ * Return:nothing
+ */
 void ft_print_alphabet(void)
 {
 	char c;
 
-	c = 'a';
-	while (c <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-	int _putchar(char c);
-	c++;
+	      _putchar(c);
 	}
+	  _putchar('\n');
 }
