@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  *main - entry point
  *
@@ -8,14 +7,12 @@
  */
 int main(void)
 {
-char caracter = 'a';
-while (caracter <= 'z')
+char alphabet = 'a';
+while (alphabet <= 'z')
 {
-printf("%c \n", caracter);
-if (caracter == 'n')
-{
-printf("ñ \n");
-caracter++;
+putchar(alphabet);
+alphabet++;
 }
-}
+putchar('\n');
+return (0);
 }
