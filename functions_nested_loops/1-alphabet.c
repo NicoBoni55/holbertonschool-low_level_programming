@@ -1,10 +1,10 @@
-#include "main.c"
+#include "main.h"
 /**
  *print_alphabet - Print the alphabet from a-z
  *
  * Return:nothing
  */
-void ft_print_alphabet(void)
+void print_alphabet(void)
 {
 	char c;
 
