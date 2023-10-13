@@ -10,13 +10,14 @@
  */
 void times_table(void)
 {
-	int i, j;
-        int result = i * j;
+	int i;
+	int j;
 
 	for (i = 0; i <= 9; i++)
 	{
 	for (j = 0; j <= 9; j++)
 	{
+	int result = i * j;
 	printf("%d", result);
 	if (j < 9)
 	{
