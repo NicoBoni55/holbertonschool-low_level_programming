@@ -2,6 +2,7 @@
 #include <ctype.h>
 /**
  *_islower - checks for lowercase character.
+ *@c: this variable is to return lowercase
  *
  * Return:0
  */
