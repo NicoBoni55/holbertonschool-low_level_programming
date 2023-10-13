@@ -4,7 +4,6 @@
  *times_table -  prints the 9 times table, starting with 0
  *@i: this variable is to multiplication
  *@j: this variable is to multiplication
- *@result: this variable is the result
  *
  *
  * Return:0
@@ -24,17 +23,17 @@ void times_table(void)
 	{
 	if (result <= 9)
 	{
-	_putchar(",");
-	_putchar(" ");
-	_putchar(" ");
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
 	}
 	else
 	{
-	_putchar(",");
-	_putchar(" ");
+	_putchar(',');
+	_putchar(' ');
 	}
 	}
 	}
-	_putchar('\n')
+	_putchar('\n');
 	}
 }
