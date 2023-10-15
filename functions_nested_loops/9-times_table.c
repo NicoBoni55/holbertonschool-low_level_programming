@@ -13,13 +13,32 @@ void times_table(void)
 	int i;
 	int j;
 
-	for (i = 0; i <= 9; i++)
-	{
-	for (j = 0; j <= 9; j++)
-	{
-	printf("%d * %d = %d\t", i, j, i * j);
-	}
-	printf("\n");
-	}
-
+ for (i = 0; i <= 9; i++)
+        {
+        for (j = 0; j <= 9; j++)
+        {
+        int result = i * j;
+        printf("%d * int = int\t" , result);
+        if (j < 9)
+        {
+        if (result <= 9)
+        {
+        _putchar(',');
+        _putchar(' ');
+        _putchar(' ');
+        }
+        else
+        {
+        _putchar(',');
+        _putchar(' ');
+        }
+        }
+        _putchar('\n');
+        }
+int main (void)
+{
+times_table();
+return (0);
+}
+}
 }
