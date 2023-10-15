@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *times_table -  prints the 9 times table, starting with 0
+ *times_table -  prints the nine times table, starting with zero
  *@i: this variable is to multiplication
  *@j: this variable is to multiplication
  *
@@ -17,23 +17,9 @@ void times_table(void)
 	{
 	for (j = 0; j <= 9; j++)
 	{
-	int result = i * j;
-	printf("%d", result);
-	if (j < 9)
-	{
-	if (result <= 9)
-	{
-	_putchar(',');
-	_putchar(' ');
-	_putchar(' ');
+	printf("%d * %d = %d\t", i, j, i * j);
 	}
-	else
-	{
-	_putchar(',');
-	_putchar(' ');
+	printf("\n");
 	}
-	}
-	}
-	_putchar('\n'); 
-	}
+
 }
