@@ -1,10 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *times_table -  prints the nine times table, starting with zero
- *@num: this variable is the number
- *@mult: this variable is to multiplication
- *@prod: this variable is to see the product
+ *times_table -  Prints the 9 times table, starting with 0
  *
  *
  * Return:0
