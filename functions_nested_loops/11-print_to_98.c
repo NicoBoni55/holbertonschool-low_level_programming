@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *print_to_98 - print all natural numbers from n to 98
- *
+ *@n: this variable is to prints all natural numbers
  *
  * Return:0
  */
@@ -9,7 +9,7 @@ void print_to_98(int n)
 {
 int i;
 
-if n = 98
+if (n = 98)
 {
 for (i = n; i <= 98; i++)
 {
@@ -37,13 +37,4 @@ printf("%d,\n", i);
 }
 }
 }
-}
-int main(void)
-{
-int n;
-
-printf("Enter a number: ");
-scanf("%d", &n);
-print_to_98(n);
-return (0);
 }
