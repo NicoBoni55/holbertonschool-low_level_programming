@@ -1,0 +1,6 @@
+school: main.c
+NAME: school
+rules: all
+	gcc -o school main.c
+
+all: school
