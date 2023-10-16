@@ -20,7 +20,7 @@ else
 printf("%d,\n", i);
 }
 }
-if else
+if (else)
 {
 for (i = n; i >= 98; i--)
 {
