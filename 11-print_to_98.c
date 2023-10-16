@@ -45,5 +45,5 @@ int n;
 printf("Enter a number: ");
 scanf("%d", &n);
 print_to_98(n);
-return 0;
+return (0);
 }
