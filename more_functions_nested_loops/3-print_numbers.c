@@ -1,10 +1,11 @@
-include "main.h"
+#include "main.h"
+#include <stdio.h>
 /**
  *print_numbers - prints the number from 0 to 9
  *
  * Return:0
  */
-void print_numbers(void)
+void print_numbers(void);
 {
 	char digit = '0';
 	while (digit <= '9')
