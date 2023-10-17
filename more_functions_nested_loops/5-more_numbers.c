@@ -11,7 +11,7 @@ void more_numbers(void)
 
 	for (cont = 0; cont <= 9; cont++)
 	{
-	for (i = '0'; i <='14'; i++)
+	for (i = '0'; i <= '14'; i++)
 	{
 	if (i > 9)
 	_putchar((i / 10) + '0');
@@ -19,4 +19,4 @@ void more_numbers(void)
 	}
 	_putchar('\n');
 	}
-}	
+}
