@@ -26,6 +26,10 @@ int main(void)
 	else
 
 	printf("%d ", number);
+
+	if (num == 100)
+	continue;
+	printf(" ");
 	}
 	printf("\n");
 	return (0);
