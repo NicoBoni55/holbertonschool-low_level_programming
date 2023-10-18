@@ -4,15 +4,15 @@
  * _strlen - function that returns the length of a string
  * @s : return the lenght
  *
- * Return: Always 0.
+ * Return: length.
  */
 int _strlen(char *s)
 {
-	int length
-	
-	length = 0;
-	while (*(s + length) != NULL)
+	int length = 0;
+
+	while (*s != NULL)
 	{
+	s++
 	length++;
 	}
 	return (lenght);
