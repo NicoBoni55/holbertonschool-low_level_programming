@@ -10,11 +10,10 @@ int _strlen(char *s)
 {
 	int length = 0;
 
-	while (s != NULL)
+	for (; *s != NULL)
 	{
 	s++;
 	length++;
 	}
 	return (length);
 }
-int length = _strlen(myString);
