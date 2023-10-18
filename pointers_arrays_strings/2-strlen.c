@@ -8,11 +8,12 @@
  */
 int _strlen(char *s)
 {
-	size_t strlen(const char *s)
+	size_t strlen(char *s)
 	{
 	length = 0;
 	while (str[length] != '\0';
 	length++;
+	s++;
 	}
 	return length
 }
