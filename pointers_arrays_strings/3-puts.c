@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _puts - Write a function that prints a string 
+ * _puts - Write a function that prints a string
+ *@str: variable to print a string
  *
- * Return: Always 0.
+ * Return: length.
  */
 void _puts(char *str)
 {
@@ -13,8 +14,10 @@ void _puts(char *str)
 	{
 	str++;
 	length++;
+	{
 	_putchar(*str);
 	}
 	return (length);
+	}
 	_putchar('\n');
 }
