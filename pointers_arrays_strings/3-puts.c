@@ -14,10 +14,9 @@ void _puts(char *str)
 	{
 	str++;
 	length++;
-	{
 	_putchar(*str);
-	}
-	return (length);
-	}
+	{
 	_putchar('\n');
+	}
+}
 }
