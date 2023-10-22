@@ -13,7 +13,9 @@ if (n <= 0)
 {
 return;
 }
-for (int i = 0; i < n; i++)
+int i;
+
+for (i = 0; i < n; i++)
 {
 printf("%d", a[i]);
 
