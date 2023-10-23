@@ -4,6 +4,7 @@
  * _strncat - function that concatenates two strings whit n
  *@dest :string 1
  *@src : string 2
+ *@n : string 3
  *
  * Return: 0.
  */
