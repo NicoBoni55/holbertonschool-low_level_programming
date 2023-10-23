@@ -21,5 +21,5 @@ char *result = dest;
 	dest++;
 	}
 	*dest = '\0';
-	return = ;
+	return result ;
 }
