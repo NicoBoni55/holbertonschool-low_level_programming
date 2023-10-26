@@ -10,7 +10,7 @@ char *leet(char *s)
 {
 	int i, j;
 	char min[] = {'a', 'e', 'o', 't', 'l', '\0'};
-	char mayus[] = {'A', 'E', 'O', 'T', 'L' '\0'};
+	char mayus[] = {'A', 'E', 'O', 'T', 'L', '\0'};
 	char num[] = {'4', '3', '0', '7', '1', '\0'};
 
 	for (i = 0; s[i] != '\0'; i++)
