@@ -10,25 +10,28 @@
  */
 char *cap_string(char *str)
 {
-	int capitalize = 1;
-	int string = strlen(str);
-	int i;
+	int i, j;
+	int *s;
 
-	for (i = 0; i < string; i++)
+	s[13] = (' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}');
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (isspace(str[i]))
+		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
+
+		for (j = 0; j < 13; j++)
 		{
-			capitalize = 1;
-		}
-		else if (capitalize)
-		{
-			str[i] = toupper(str[i]);
-			capitalize = 0;
-		}
-		else
-		{
-			str[i] = tolower(str[i]);
+			if (str[i] == s[j])
+			{
+				if (s[i + 1] >= 'a' && str[i + 1] <= 'z')
+				{
+					str[i + 1] -= 32;
+				}
+			}
 		}
 	}
-	return (0);
+
+	return (str);
 }
