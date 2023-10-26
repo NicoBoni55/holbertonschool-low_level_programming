@@ -14,13 +14,12 @@ char *leet(char *s)
 	for (i = 0; i < 256; i++)
 	{
 		leet_map[i] = (char)i;
-	}
 	leet_map['A'] = leet_map['a'] = '4';
 	leet_map['E'] = leet_map['e'] = '3';
 	leet_map['O'] = leet_map['o'] = '0';
 	leet_map['T'] = leet_map['t'] = '7';
 	leet_map['L'] = leet_map['l'] = '1';
-
+	}
 	for (i = '0'; s[i] != '\0'; i++)
 	{
 		s[i] = leet_map[(int)s[i]];
