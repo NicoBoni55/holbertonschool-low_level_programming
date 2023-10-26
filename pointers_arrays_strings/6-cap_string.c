@@ -10,25 +10,19 @@
  */
 char *cap_string(char *str)
 {
-	int capitalize = 1;
-	int string = strlen(str);
-	int i;
-
-	for (i = 0; i < string; i++)
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+	while (str[a])
 	{
-		if (isspace(str[i]))
+		i = 0;
+		while (i < cspc)
 		{
-			capitalize = 1;
+			if ((a == 0 || str[a - 1] == spc[i]) && (str[a] >= 97 && str[a] <= 122))
+				str[a] -= 32;
+			i++;
 		}
-		else if (capitalize)
-		{
-			str[i] = toupper(str[i]);
-			capitalize = 0;
-		}
-		else
-		{
-			str[i] = tolower(str[i]);
-		}
+		a++;
 	}
-	return (0);
+	return (str);
 }
