@@ -13,7 +13,7 @@ char *leet(char *s)
 	char mayus[] = {'A', 'E', 'O', 'T', 'L', '\0'};
 	char num[] = {'4', '3', '0', '7', '1', '\0'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; ++i)
 	{
 	for (j = '0'; j < 5; j++)
 	{
