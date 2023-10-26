@@ -9,15 +9,14 @@
 char *leet(char *s)
 {
 	int i, j;
-	char min[] = {'a', 'e', 'o', 't', 'l', '\0'};
-	char mayus[] = {'A', 'E', 'O', 'T', 'L', '\0'};
-	char num[] = {'4', '3', '0', '7', '1', '\0'};
+	char *letter = "aAeEoOtTlL";
+	char *num = "4433007711";
 
-	for (i = 0; s[i] != '\0'; ++i)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-	for (j = '0'; j < 5; j++)
+	for (j = '0'; j < 10; j++)
 	{
-		if (s[i] == min[j] || s[i] == mayus[j])
+		if (s[i] == letter[j])
 		{
 			s[i] = num[j];
 		}
