@@ -14,8 +14,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (white = 0; white < 8; white++)
 		{
-			printf("%c", a[black][white]);
+			_putchar(a[black][white]);
 		}
-		printf('\0');
+		_putchar('\0');
 	}
 }
