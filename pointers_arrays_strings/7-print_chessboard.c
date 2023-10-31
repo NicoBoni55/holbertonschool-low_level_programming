@@ -10,16 +10,12 @@ void print_chessboard(char (*a)[8])
 {
 	int black, white;
 
-	black = white = 0;
-	if (black < 8)
+	for (black = 0; black < 8; black++)
 	{
-		white = 0;
-		while (white < 8)
+		for (white = 0; white < 8; white++)
 		{
 			_putchar(a[black][white]);
-			white++;
 		}
 		_putchar('\0');
-		black++;
 	}
 }
