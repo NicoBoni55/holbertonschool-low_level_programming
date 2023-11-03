@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
  *@str : string which is a duplicate
@@ -10,22 +11,20 @@
 char *_strdup(char *str)
 {
 	char *s;
-	int a, b;
+	size_t a;
 
-	for (a = 0; str[a] != '\0'; a++)
-	{
-
-	s = (char *) malloc((a + 1) * sizeof(char));
-	}
-	for (b = 0; b < a; b++)
-	{
-		s[b] = str[a];
-
-		s[a + 1] = '\0';
-	}
-	return (s);
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	a = strlen(str);
+
+	s = (char *) malloc((a + 1) * sizeof(char));
+
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+	strcpy(s, str);
+	return (s);
 }
