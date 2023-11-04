@@ -6,7 +6,7 @@
  * malloc_checked - function that allocates memory using malloc
  *@b : parameter to malloc
  *
- * Return: Always 0.
+ * Return: if fail return 98.
  */
 void *malloc_checked(unsigned int b)
 {
@@ -14,8 +14,7 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 	{
-		fprintf(stderr, "Memory allocation failed.\n");
-		exit(98);
+		return(98);
 	}
 	return (ptr);
 }
