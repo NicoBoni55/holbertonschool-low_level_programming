@@ -12,9 +12,6 @@ void *malloc_checked(unsigned int b)
 {
 	void *ptr = malloc(b);
 
-	ptr = (int *) malloc(b * sizeof(int));
-
-
 	if (ptr == NULL)
 	{
 		fprintf(stderr, "Memory allocation failed.\n");
