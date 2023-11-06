@@ -5,7 +5,7 @@
  * File: 1-pi.h
  * Auth: Nicolas Bonilla
  * Desc: header file that defines a macro named PI
- * 	 PI  as an abbreviation for the token 3.14159265359
+ * PI  as an abbreviation for the token 3.14159265359
  */
 
 #define PI 3.14159265359
