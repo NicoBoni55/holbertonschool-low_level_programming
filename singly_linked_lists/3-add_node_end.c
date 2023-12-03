@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * add_node - function that add a new node at the end
+ * add_node_end - function that add a new node at the end
  * @head : the end of the node
- * @str: variable to dulicate 
+ * @str: variable to dulicate
  *
  * Return: the address of the new element
  * or NULL if it failed.
