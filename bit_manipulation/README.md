@@ -1,1 +1,1 @@
-bit manipulation
+hash table
