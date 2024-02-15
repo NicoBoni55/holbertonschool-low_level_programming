@@ -4,7 +4,7 @@
 /**
  * main - print the number of n
  *
- * Return : Always (success) 
+ * Return: Always (success)
  *
  */
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n == 0) 
+	if (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
