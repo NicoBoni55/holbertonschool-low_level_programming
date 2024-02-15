@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * main - assign a random number to the variable n
- * @n : numbero to the variable
+/**
+ * main - print the number of n
  *
- * return : 0 
+ * Return : Always (success) 
  *
  */
 int main(void)
