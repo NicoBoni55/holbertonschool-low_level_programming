@@ -8,9 +8,12 @@ int main(void)
 {
 	char c = 97;
 
-	for (c = 97; (c <= 122) || (c =! 101 && 113); c++)
+	for (c = 97; c <= 122; c++)
 	{
+		if (c != 113 && c != 101)
+		{
 		putchar(c);
+		}
 	}
 	putchar('\n');
 
