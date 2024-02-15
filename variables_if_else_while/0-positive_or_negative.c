@@ -1,13 +1,14 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /*
  * main - assign a random number to the variable n
+ * @n : numbero to the variable
  *
  * return : 0 
  *
  */
-int main()
+int main(void)
 {
 	int n;
 
