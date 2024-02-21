@@ -21,8 +21,8 @@ int main(void)
 		else
 		{
 		printf("%d", a);
-		putchar(' ');
 		}
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
