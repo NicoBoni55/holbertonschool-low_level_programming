@@ -13,7 +13,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	for (a = 2; a <= n / 2; a++)
+	for (a = n; a <= n / 2; a++)
 		if (n % a == 0)
 		{
 			return (0);
