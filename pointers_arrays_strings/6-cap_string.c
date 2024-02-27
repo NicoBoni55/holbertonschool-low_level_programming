@@ -8,16 +8,41 @@
 char *cap_string(char *s)
 {
 	int a;
-	int b = 0;
-	
+	int M = 0;
+
 	for (a = 0; s[a] != '\0'; a++)
 	{
-		if (b && s[a] <= 'Z' && s[a] >= 'A')
+		if (s[0] >= 'a' && s[0] <= 'z')
 		{
-			s[a]= s[a] - 32;
-			b = 0;
+			s[a] = s[a] - 32;
 		}
-
+		if (s[a] >= 'a' && s[a] <= 'z' && M)
+		{
+			s[a] = s[a] - 32;
+			M = 0;
+		}
+		else
+		{
+			M = 0;
+		}
+		switch (s[a])
+		{
+			case ' ':
+			case '\t':
+			case '\n':
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			M = 1;
+			break;
+		}
 	}
 	return (s);
 }
