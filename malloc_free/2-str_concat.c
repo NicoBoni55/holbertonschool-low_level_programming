@@ -13,7 +13,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		return (NULL);
+		s1 = "";
+		s2 = "";
 	}
 	while (s1[l1] != '\0')
 	l1++;
@@ -42,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0; j < l2; j++)
 	{
-		res[l1 + j] = str2[j];
+		res[i + j] = str2[j];
 	}
 	res[l1 + l2] = '\0';
 	free(str1);
