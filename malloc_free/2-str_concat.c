@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0; j < l2; j++)
 	{
-		res[i + j] = str2[j];
+		res[l1 + j] = str2[j];
 	}
 	res[l1 + l2] = '\0';
 	free(str1);
