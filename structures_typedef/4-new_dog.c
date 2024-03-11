@@ -68,15 +68,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	max->name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if (!max->name)
 	{
-		free(max);
 		free(max->name);
+		free(max);
 		return (NULL);
 	}
 	max->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (!max->name)
 	{
-		free(max);
 		free(max->owner);
+		free(max);
 		return (NULL);
 	}
 	max->name = _strcpy(max->name, name);
