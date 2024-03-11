@@ -52,7 +52,7 @@ char *_strcpy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t max;
+	dog_t *max;
 
 	if (name == NULL || owner == NULL || age < 0)
 	{
