@@ -65,6 +65,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	max->name = _strcpy(max->name, name);
 	max->owner = _strcpy(max->owner, owner);
+	max->age = age;
 
 	return (max);
 }
