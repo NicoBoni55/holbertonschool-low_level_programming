@@ -14,13 +14,13 @@ dog_t *new_dog(char *name, float age, char *owner);
  */
 int _strlen(char *s)
 {
-	int f;
+	int l;
 
-	for (f = 0; *s != '\0'; s++)
+	for (l = 0; *s != '\0'; s++)
 	{
-		f++;
+		l++;
 	}
-	return (f);
+	return (l);
 }
 
 /**
@@ -60,8 +60,30 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	max = malloc(sizeof(dog_t));
+
+	if (max == NULL)
+	{
+		free(max);
+		return (NULL);
+	}
+
 	max->name = malloc(sizeof(char) * (_strlen(name) + 1));
+
+	if (max->name == NULL)
+	{
+		free(max->name);
+		free(max);
+		return (NULL);
+	}
+
 	max->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+
+	if (max->owner == NULL)
+	{
+		free(max->owner);
+		free(max);
+		return (NULL);
+	}
 
 	max->name = _strcpy(max->name, name);
 	max->owner = _strcpy(max->owner, owner);
